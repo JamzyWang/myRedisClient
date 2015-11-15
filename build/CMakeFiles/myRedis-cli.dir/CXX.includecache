@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/zheming/ClionProjects/Test/include/connectRedisServer.h
-
 /Users/zheming/ClionProjects/Test/include/dataSerialization.h
 string
 -
@@ -15,14 +13,6 @@ string
 /Users/zheming/ClionProjects/Test/include/util.h
 string
 -
-
-/Users/zheming/ClionProjects/Test/src/connectRedisServer.cpp
-iostream
--
-boost/asio.hpp
--
-../include/connectRedisServer.h
-/Users/zheming/ClionProjects/Test/include/connectRedisServer.h
 
 /Users/zheming/ClionProjects/Test/src/dataSerialization.cpp
 iostream
@@ -38,8 +28,6 @@ sstream
 iostream
 -
 boost/asio.hpp
--
-boost/array.hpp
 -
 ../include/dataSerialization.h
 /Users/zheming/ClionProjects/Test/include/dataSerialization.h

@@ -123,33 +123,6 @@ myRedis-cli/fast:
 	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/build
 .PHONY : myRedis-cli/fast
 
-src/connectRedisServer.o: src/connectRedisServer.cpp.o
-
-.PHONY : src/connectRedisServer.o
-
-# target to build an object file
-src/connectRedisServer.cpp.o:
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o
-.PHONY : src/connectRedisServer.cpp.o
-
-src/connectRedisServer.i: src/connectRedisServer.cpp.i
-
-.PHONY : src/connectRedisServer.i
-
-# target to preprocess a source file
-src/connectRedisServer.cpp.i:
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.i
-.PHONY : src/connectRedisServer.cpp.i
-
-src/connectRedisServer.s: src/connectRedisServer.cpp.s
-
-.PHONY : src/connectRedisServer.s
-
-# target to generate assembly for a file
-src/connectRedisServer.cpp.s:
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.s
-.PHONY : src/connectRedisServer.cpp.s
-
 src/dataSerialization.o: src/dataSerialization.cpp.o
 
 .PHONY : src/dataSerialization.o
@@ -240,9 +213,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... myRedis-cli"
-	@echo "... src/connectRedisServer.o"
-	@echo "... src/connectRedisServer.i"
-	@echo "... src/connectRedisServer.s"
 	@echo "... src/dataSerialization.o"
 	@echo "... src/dataSerialization.i"
 	@echo "... src/dataSerialization.s"

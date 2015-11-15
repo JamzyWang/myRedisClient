@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o"
   "CMakeFiles/myRedis-cli.dir/src/dataSerialization.cpp.o"
   "CMakeFiles/myRedis-cli.dir/src/main.cpp.o"
   "CMakeFiles/myRedis-cli.dir/src/util.cpp.o"

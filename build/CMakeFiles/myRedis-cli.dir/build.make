@@ -57,33 +57,9 @@ include CMakeFiles/myRedis-cli.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/myRedis-cli.dir/flags.make
 
-CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o: CMakeFiles/myRedis-cli.dir/flags.make
-CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o: ../src/connectRedisServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o -c /Users/zheming/ClionProjects/Test/src/connectRedisServer.cpp
-
-CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zheming/ClionProjects/Test/src/connectRedisServer.cpp > CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.i
-
-CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zheming/ClionProjects/Test/src/connectRedisServer.cpp -o CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.s
-
-CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o.requires:
-
-.PHONY : CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o.requires
-
-CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o.provides: CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o.provides.build
-.PHONY : CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o.provides
-
-CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o.provides.build: CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o
-
-
 CMakeFiles/myRedis-cli.dir/src/dataSerialization.cpp.o: CMakeFiles/myRedis-cli.dir/flags.make
 CMakeFiles/myRedis-cli.dir/src/dataSerialization.cpp.o: ../src/dataSerialization.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/myRedis-cli.dir/src/dataSerialization.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/myRedis-cli.dir/src/dataSerialization.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/myRedis-cli.dir/src/dataSerialization.cpp.o -c /Users/zheming/ClionProjects/Test/src/dataSerialization.cpp
 
 CMakeFiles/myRedis-cli.dir/src/dataSerialization.cpp.i: cmake_force
@@ -107,7 +83,7 @@ CMakeFiles/myRedis-cli.dir/src/dataSerialization.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/myRedis-cli.dir/src/main.cpp.o: CMakeFiles/myRedis-cli.dir/flags.make
 CMakeFiles/myRedis-cli.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/myRedis-cli.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/myRedis-cli.dir/src/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/myRedis-cli.dir/src/main.cpp.o -c /Users/zheming/ClionProjects/Test/src/main.cpp
 
 CMakeFiles/myRedis-cli.dir/src/main.cpp.i: cmake_force
@@ -131,7 +107,7 @@ CMakeFiles/myRedis-cli.dir/src/main.cpp.o.provides.build: CMakeFiles/myRedis-cli
 
 CMakeFiles/myRedis-cli.dir/src/util.cpp.o: CMakeFiles/myRedis-cli.dir/flags.make
 CMakeFiles/myRedis-cli.dir/src/util.cpp.o: ../src/util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/myRedis-cli.dir/src/util.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/myRedis-cli.dir/src/util.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/myRedis-cli.dir/src/util.cpp.o -c /Users/zheming/ClionProjects/Test/src/util.cpp
 
 CMakeFiles/myRedis-cli.dir/src/util.cpp.i: cmake_force
@@ -155,7 +131,6 @@ CMakeFiles/myRedis-cli.dir/src/util.cpp.o.provides.build: CMakeFiles/myRedis-cli
 
 # Object files for target myRedis-cli
 myRedis__cli_OBJECTS = \
-"CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o" \
 "CMakeFiles/myRedis-cli.dir/src/dataSerialization.cpp.o" \
 "CMakeFiles/myRedis-cli.dir/src/main.cpp.o" \
 "CMakeFiles/myRedis-cli.dir/src/util.cpp.o"
@@ -163,13 +138,12 @@ myRedis__cli_OBJECTS = \
 # External object files for target myRedis-cli
 myRedis__cli_EXTERNAL_OBJECTS =
 
-../bin/myRedis-cli: CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o
 ../bin/myRedis-cli: CMakeFiles/myRedis-cli.dir/src/dataSerialization.cpp.o
 ../bin/myRedis-cli: CMakeFiles/myRedis-cli.dir/src/main.cpp.o
 ../bin/myRedis-cli: CMakeFiles/myRedis-cli.dir/src/util.cpp.o
 ../bin/myRedis-cli: CMakeFiles/myRedis-cli.dir/build.make
 ../bin/myRedis-cli: CMakeFiles/myRedis-cli.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../bin/myRedis-cli"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/myRedis-cli"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myRedis-cli.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -177,7 +151,6 @@ CMakeFiles/myRedis-cli.dir/build: ../bin/myRedis-cli
 
 .PHONY : CMakeFiles/myRedis-cli.dir/build
 
-CMakeFiles/myRedis-cli.dir/requires: CMakeFiles/myRedis-cli.dir/src/connectRedisServer.cpp.o.requires
 CMakeFiles/myRedis-cli.dir/requires: CMakeFiles/myRedis-cli.dir/src/dataSerialization.cpp.o.requires
 CMakeFiles/myRedis-cli.dir/requires: CMakeFiles/myRedis-cli.dir/src/main.cpp.o.requires
 CMakeFiles/myRedis-cli.dir/requires: CMakeFiles/myRedis-cli.dir/src/util.cpp.o.requires
