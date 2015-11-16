@@ -1,6 +1,5 @@
 #include <iostream>
 #include <boost/asio.hpp>
-//#include "../include/dataSerialization.h"
 #include "../include/util.h"
 #include "../include/redisCommandRouter.h"
 
@@ -49,21 +48,21 @@ int main(int argc, char *argv[]) {
 
 void executeLoop(ip::tcp::socket &sock, std::string ip, std::string port) {
 
-    std::cout << ip << ":" << port << ">";
-
+    std::cout << ip << ":" << port << "> ";
     std::string command;
     std::cin >> command;
-    //convert command to lower
-    //Todo
+    std::transform(command.begin(), command.end(), command.begin(), ::tolower);
+
     while (command != "exit") {
         if (!checkRedisCommand(command)) {
             std::cout << "(error) ERR unknown command" << "\'" << command << "\'" << std::endl;
+            std::cin.ignore(10000, '\n');
         }
         else {
             redisCommandRouter(sock, command);
         }
-        std::cout << ip << ":" << port << ">";
+        std::cout << ip << ":" << port << "> ";
         std::cin >> command;
-    }//end of while
-
+        std::transform(command.begin(), command.end(), command.begin(), ::tolower);
+    }
 }

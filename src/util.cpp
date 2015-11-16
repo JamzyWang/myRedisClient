@@ -8,20 +8,21 @@
 
 bool isIPAddress(const std::string ip) {
     //Todo
-    std::regex ipRegex("((?:(?:25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d)))\\.){3}(?:25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d))))");
-    return std::regex_match(ip,ipRegex);
+    std::regex ipRegex(
+            "((?:(?:25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d)))\\.){3}(?:25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d))))");
+    return std::regex_match(ip, ipRegex);
 }
 
 bool isHostPort(const std::string port) {
     //Todo
     bool isPort = false;
-    try{
+    try {
         int portNum = std::stoi(port);
-        if(portNum>0 && portNum < 65536){
+        if (portNum > 0 && portNum < 65536) {
             isPort = true;
         }
     }
-    catch(std::exception e) {
+    catch (std::exception e) {
         isPort = false;
     }
     return isPort;
@@ -68,12 +69,11 @@ bool checkCommandLineInputs(const int argc, char *argv[]) {
     return rightCommandLineInputs;
 }
 
-bool checkRedisCommand(std::string command){
-    if (command != "get" && command != "set" && command !="hset" && command !="hget") {
-        std::cout << "(error) ERR unknown command" << "\'" << command << "\'" << std::endl;
+bool checkRedisCommand(std::string command) {
+    if (command != "get" && command != "set" && command != "hset" && command != "hget" && command != "hgetall") {
         return false;
     }
-    else{
+    else {
         return true;
     }
 }

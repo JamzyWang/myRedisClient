@@ -111,3 +111,60 @@ std::string deserilizeHgetData(char responseData[]) {
         return dataValue;
     }
 }
+
+/*
+*10
+$3
+age
+$2
+20
+$6
+school
+$5
+fudan
+$3
+sex
+$4
+male
+$4
+from
+$8
+zhejiang
+$2
+to
+$8
+shanghai
+ */
+
+/*
+127.0.0.1:6379> HGETALL wangzheming
+ 1) "age"
+ 2) "20"
+ 3) "school"
+ 4) "fudan"
+ 5) "sex"
+ 6) "male"
+ 7) "from"
+ 8) "zhejiang"
+ 9) "to"
+10) "shanghai"
+ */
+void deserilizeHgetallData(char responseData[]) {
+    std::string str(responseData);
+    std::istringstream is(str);
+    std::string dataLen;
+    std::string dataValue;
+    is >> dataLen;
+    int dataRealLen = std::stoi(dataLen.substr(1));
+    if (dataRealLen == 0) {
+        std::cout << "empty list or set" << std::endl;
+    }
+    else {
+        for (int i = 1; i <= dataRealLen; ++i) {
+            std::string bytesize;
+            std::string realdata;
+            is >> bytesize >> realdata;
+            std::cout << std::to_string(i) << ") \"" << realdata << "\"" << std::endl;
+        }
+    }
+}

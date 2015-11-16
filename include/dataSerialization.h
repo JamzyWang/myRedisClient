@@ -17,4 +17,6 @@ std::string deserilizeGetData(char responseData[]);
 
 std::string deserilizeHgetData(char responseData[]);
 
+void deserilizeHgetallData(char responseData[]);
+
 #endif //TEST_DATASERIALIZATION_H

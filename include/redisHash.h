@@ -13,4 +13,6 @@ bool hsetCommand(ip::tcp::socket &sock);
 
 bool hgetCommand(ip::tcp::socket &sock);
 
+bool hgetallCommand(ip::tcp::socket &sock);
+
 #endif //TEST_REDISHASH_H

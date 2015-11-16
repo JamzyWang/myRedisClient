@@ -62,3 +62,21 @@ bool hgetCommand(ip::tcp::socket &sock) {
         return false;
     }
 }
+
+bool hgetallCommand(ip::tcp::socket &sock) {
+    std::string command = "hgetall";
+    std::string key;
+    std::cin >> key;
+    std::string serilizatedData = dataSerilize(command, key);
+    size_t len = boost::asio::write(sock, boost::asio::buffer(serilizatedData));
+    if (len == serilizatedData.length()) {
+        char response[2000];
+        boost::system::error_code error;
+        sock.read_some(boost::asio::buffer(response), error);
+        deserilizeHgetallData(response);
+        return true;
+    }
+    else {
+        return false;
+    }
+}

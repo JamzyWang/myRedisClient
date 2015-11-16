@@ -19,4 +19,7 @@ void redisCommandRouter(ip::tcp::socket &sock, std::string command) {
     if (command == "hget") {
         hgetCommand(sock);
     }
+    if (command == "hgetall") {
+        hgetallCommand(sock);
+    }
 }
