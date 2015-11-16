@@ -21,9 +21,15 @@ bool hsetCommand(ip::tcp::socket &sock) {
     if (len == serilizatedData.length()) {
         char response[200];
         boost::system::error_code error;
-        sock.read_some(boost::asio::buffer(response), error);
-        std::cout << response;
-        return true;
+        size_t len = sock.read_some(boost::asio::buffer(response), error);
+        if (len == 4) {
+            std::cout << "(integer) 1" << std::endl;
+            return true;
+        }
+        else {
+            return false;
+        }
+
     }
     else {
         std::cout << "failed to execute " << command << " " << key << " " << value << std::endl;
@@ -32,10 +38,12 @@ bool hsetCommand(ip::tcp::socket &sock) {
 }
 
 bool hgetCommand(ip::tcp::socket &sock) {
+    std::string command = "hget";
     std::string key;
+    std::string field;
     std::cin >> key;
-    std::string command = "get";
-    std::string serilizatedData = dataSerilize(command, key);
+    std::cin >> field;
+    std::string serilizatedData = dataSerilize(command, key, field);
     size_t len = boost::asio::write(sock, boost::asio::buffer(serilizatedData));
     if (len == serilizatedData.length()) {
         char response[200];
