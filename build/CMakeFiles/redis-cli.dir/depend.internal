@@ -10,8 +10,13 @@ CMakeFiles/redis-cli.dir/src/main.cpp.o
  /Users/zheming/ClionProjects/Test/src/main.cpp
 CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.o
  /Users/zheming/ClionProjects/Test/include/redisCommandRouter.h
+ /Users/zheming/ClionProjects/Test/include/redisHash.h
  /Users/zheming/ClionProjects/Test/include/redisString.h
  /Users/zheming/ClionProjects/Test/src/redisCommandRouter.cpp
+CMakeFiles/redis-cli.dir/src/redisHash.cpp.o
+ /Users/zheming/ClionProjects/Test/include/dataSerialization.h
+ /Users/zheming/ClionProjects/Test/include/redisHash.h
+ /Users/zheming/ClionProjects/Test/src/redisHash.cpp
 CMakeFiles/redis-cli.dir/src/redisString.cpp.o
  /Users/zheming/ClionProjects/Test/include/dataSerialization.h
  /Users/zheming/ClionProjects/Test/include/redisString.h

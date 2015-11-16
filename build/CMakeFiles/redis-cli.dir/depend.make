@@ -9,8 +9,13 @@ CMakeFiles/redis-cli.dir/src/main.cpp.o: ../include/util.h
 CMakeFiles/redis-cli.dir/src/main.cpp.o: ../src/main.cpp
 
 CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.o: ../include/redisCommandRouter.h
+CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.o: ../include/redisHash.h
 CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.o: ../include/redisString.h
 CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.o: ../src/redisCommandRouter.cpp
+
+CMakeFiles/redis-cli.dir/src/redisHash.cpp.o: ../include/dataSerialization.h
+CMakeFiles/redis-cli.dir/src/redisHash.cpp.o: ../include/redisHash.h
+CMakeFiles/redis-cli.dir/src/redisHash.cpp.o: ../src/redisHash.cpp
 
 CMakeFiles/redis-cli.dir/src/redisString.cpp.o: ../include/dataSerialization.h
 CMakeFiles/redis-cli.dir/src/redisString.cpp.o: ../include/redisString.h

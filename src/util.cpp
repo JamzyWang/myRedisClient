@@ -69,7 +69,7 @@ bool checkCommandLineInputs(const int argc, char *argv[]) {
 }
 
 bool checkRedisCommand(std::string command){
-    if (command != "get" && command != "set") {
+    if (command != "get" && command != "set" && command !="hset" && command !="hget") {
         std::cout << "(error) ERR unknown command" << "\'" << command << "\'" << std::endl;
         return false;
     }

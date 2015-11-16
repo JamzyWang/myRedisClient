@@ -204,6 +204,33 @@ src/redisCommandRouter.cpp.s:
 	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.s
 .PHONY : src/redisCommandRouter.cpp.s
 
+src/redisHash.o: src/redisHash.cpp.o
+
+.PHONY : src/redisHash.o
+
+# target to build an object file
+src/redisHash.cpp.o:
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/redisHash.cpp.o
+.PHONY : src/redisHash.cpp.o
+
+src/redisHash.i: src/redisHash.cpp.i
+
+.PHONY : src/redisHash.i
+
+# target to preprocess a source file
+src/redisHash.cpp.i:
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/redisHash.cpp.i
+.PHONY : src/redisHash.cpp.i
+
+src/redisHash.s: src/redisHash.cpp.s
+
+.PHONY : src/redisHash.s
+
+# target to generate assembly for a file
+src/redisHash.cpp.s:
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/redisHash.cpp.s
+.PHONY : src/redisHash.cpp.s
+
 src/redisString.o: src/redisString.cpp.o
 
 .PHONY : src/redisString.o
@@ -276,6 +303,9 @@ help:
 	@echo "... src/redisCommandRouter.o"
 	@echo "... src/redisCommandRouter.i"
 	@echo "... src/redisCommandRouter.s"
+	@echo "... src/redisHash.o"
+	@echo "... src/redisHash.i"
+	@echo "... src/redisHash.s"
 	@echo "... src/redisString.o"
 	@echo "... src/redisString.i"
 	@echo "... src/redisString.s"

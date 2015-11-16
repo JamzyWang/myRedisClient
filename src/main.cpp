@@ -53,6 +53,8 @@ void executeLoop(ip::tcp::socket &sock, std::string ip, std::string port) {
 
     std::string command;
     std::cin >> command;
+    //convert command to lower
+    //Todo
     while (command != "exit") {
         if (!checkRedisCommand(command)) {
             std::cout << "(error) ERR unknown command" << "\'" << command << "\'" << std::endl;

@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/redis-cli.dir/src/dataSerialization.cpp.o"
   "CMakeFiles/redis-cli.dir/src/main.cpp.o"
   "CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.o"
+  "CMakeFiles/redis-cli.dir/src/redisHash.cpp.o"
   "CMakeFiles/redis-cli.dir/src/redisString.cpp.o"
   "CMakeFiles/redis-cli.dir/src/util.cpp.o"
   "../bin/redis-cli.pdb"

@@ -14,6 +14,10 @@ string
 boost/asio.hpp
 -
 
+/Users/zheming/ClionProjects/Test/include/redisHash.h
+boost/asio.hpp
+-
+
 /Users/zheming/ClionProjects/Test/include/redisString.h
 boost/asio.hpp
 -
@@ -47,6 +51,16 @@ boost/asio.hpp
 /Users/zheming/ClionProjects/Test/include/redisCommandRouter.h
 ../include/redisString.h
 /Users/zheming/ClionProjects/Test/include/redisString.h
+../include/redisHash.h
+/Users/zheming/ClionProjects/Test/include/redisHash.h
+
+/Users/zheming/ClionProjects/Test/src/redisHash.cpp
+iostream
+-
+../include/redisHash.h
+/Users/zheming/ClionProjects/Test/include/redisHash.h
+../include/dataSerialization.h
+/Users/zheming/ClionProjects/Test/include/dataSerialization.h
 
 /Users/zheming/ClionProjects/Test/src/redisString.cpp
 ../include/redisString.h

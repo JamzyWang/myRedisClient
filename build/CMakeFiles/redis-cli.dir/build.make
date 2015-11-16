@@ -129,9 +129,33 @@ CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.o.provides: CMakeFiles/redis
 CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.o.provides.build: CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.o
 
 
+CMakeFiles/redis-cli.dir/src/redisHash.cpp.o: CMakeFiles/redis-cli.dir/flags.make
+CMakeFiles/redis-cli.dir/src/redisHash.cpp.o: ../src/redisHash.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/redis-cli.dir/src/redisHash.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/redis-cli.dir/src/redisHash.cpp.o -c /Users/zheming/ClionProjects/Test/src/redisHash.cpp
+
+CMakeFiles/redis-cli.dir/src/redisHash.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/redis-cli.dir/src/redisHash.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zheming/ClionProjects/Test/src/redisHash.cpp > CMakeFiles/redis-cli.dir/src/redisHash.cpp.i
+
+CMakeFiles/redis-cli.dir/src/redisHash.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/redis-cli.dir/src/redisHash.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zheming/ClionProjects/Test/src/redisHash.cpp -o CMakeFiles/redis-cli.dir/src/redisHash.cpp.s
+
+CMakeFiles/redis-cli.dir/src/redisHash.cpp.o.requires:
+
+.PHONY : CMakeFiles/redis-cli.dir/src/redisHash.cpp.o.requires
+
+CMakeFiles/redis-cli.dir/src/redisHash.cpp.o.provides: CMakeFiles/redis-cli.dir/src/redisHash.cpp.o.requires
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/redisHash.cpp.o.provides.build
+.PHONY : CMakeFiles/redis-cli.dir/src/redisHash.cpp.o.provides
+
+CMakeFiles/redis-cli.dir/src/redisHash.cpp.o.provides.build: CMakeFiles/redis-cli.dir/src/redisHash.cpp.o
+
+
 CMakeFiles/redis-cli.dir/src/redisString.cpp.o: CMakeFiles/redis-cli.dir/flags.make
 CMakeFiles/redis-cli.dir/src/redisString.cpp.o: ../src/redisString.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/redis-cli.dir/src/redisString.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/redis-cli.dir/src/redisString.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/redis-cli.dir/src/redisString.cpp.o -c /Users/zheming/ClionProjects/Test/src/redisString.cpp
 
 CMakeFiles/redis-cli.dir/src/redisString.cpp.i: cmake_force
@@ -155,7 +179,7 @@ CMakeFiles/redis-cli.dir/src/redisString.cpp.o.provides.build: CMakeFiles/redis-
 
 CMakeFiles/redis-cli.dir/src/util.cpp.o: CMakeFiles/redis-cli.dir/flags.make
 CMakeFiles/redis-cli.dir/src/util.cpp.o: ../src/util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/redis-cli.dir/src/util.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/redis-cli.dir/src/util.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/redis-cli.dir/src/util.cpp.o -c /Users/zheming/ClionProjects/Test/src/util.cpp
 
 CMakeFiles/redis-cli.dir/src/util.cpp.i: cmake_force
@@ -182,6 +206,7 @@ redis__cli_OBJECTS = \
 "CMakeFiles/redis-cli.dir/src/dataSerialization.cpp.o" \
 "CMakeFiles/redis-cli.dir/src/main.cpp.o" \
 "CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.o" \
+"CMakeFiles/redis-cli.dir/src/redisHash.cpp.o" \
 "CMakeFiles/redis-cli.dir/src/redisString.cpp.o" \
 "CMakeFiles/redis-cli.dir/src/util.cpp.o"
 
@@ -191,11 +216,12 @@ redis__cli_EXTERNAL_OBJECTS =
 ../bin/redis-cli: CMakeFiles/redis-cli.dir/src/dataSerialization.cpp.o
 ../bin/redis-cli: CMakeFiles/redis-cli.dir/src/main.cpp.o
 ../bin/redis-cli: CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.o
+../bin/redis-cli: CMakeFiles/redis-cli.dir/src/redisHash.cpp.o
 ../bin/redis-cli: CMakeFiles/redis-cli.dir/src/redisString.cpp.o
 ../bin/redis-cli: CMakeFiles/redis-cli.dir/src/util.cpp.o
 ../bin/redis-cli: CMakeFiles/redis-cli.dir/build.make
 ../bin/redis-cli: CMakeFiles/redis-cli.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../bin/redis-cli"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ../bin/redis-cli"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/redis-cli.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -206,6 +232,7 @@ CMakeFiles/redis-cli.dir/build: ../bin/redis-cli
 CMakeFiles/redis-cli.dir/requires: CMakeFiles/redis-cli.dir/src/dataSerialization.cpp.o.requires
 CMakeFiles/redis-cli.dir/requires: CMakeFiles/redis-cli.dir/src/main.cpp.o.requires
 CMakeFiles/redis-cli.dir/requires: CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.o.requires
+CMakeFiles/redis-cli.dir/requires: CMakeFiles/redis-cli.dir/src/redisHash.cpp.o.requires
 CMakeFiles/redis-cli.dir/requires: CMakeFiles/redis-cli.dir/src/redisString.cpp.o.requires
 CMakeFiles/redis-cli.dir/requires: CMakeFiles/redis-cli.dir/src/util.cpp.o.requires
 

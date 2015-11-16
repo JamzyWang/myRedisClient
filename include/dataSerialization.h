@@ -13,6 +13,8 @@ std::string dataSerilize(std::string command, std::string key, std::string value
 
 std::string dataSerilize(std::string command, std::string key, std::string field, std::string value);
 
-std::string dataDeserilize(char responseData[]);
+std::string deserilizeGetData(char responseData[]);
+
+std::string deserilizeHgetData(char responseData[]);
 
 #endif //TEST_DATASERIALIZATION_H

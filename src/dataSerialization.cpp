@@ -63,15 +63,41 @@ std::string dataSerilize(std::string command, std::string key) {
 }
 
 
-/*
 std::string dataSerilize(std::string command, std::string key, std::string field, std::string value) {
-
-    return command;
+    std::string numOfArugments = "4";
+    std::string byteSizeOfFirstArgument = std::to_string(command.length());
+    std::string byteSizeOfSecondArgument = std::to_string(key.length());
+    std::string byteSizeOfThirdArgument = std::to_string(field.length());
+    std::string byteSizeOfFourthArgument = std::to_string(value.length());
+    std::string data = "*" + numOfArugments + "\r\n" +
+                       "$" + byteSizeOfFirstArgument + "\r\n" +
+                       command + "\r\n" +
+                       "$" + byteSizeOfSecondArgument + "\r\n" +
+                       key + "\r\n" +
+                       "$" + byteSizeOfThirdArgument + "\r\n" +
+                       field + "\r\n" +
+                       "$" + byteSizeOfFourthArgument + "\r\n" +
+                       value + "\r\n";
+    return data;
 }
- */
 
 
-std::string dataDeserilize(char responseData[]) {
+std::string deserilizeGetData(char responseData[]) {
+    std::string str(responseData);
+    std::istringstream is(str);
+    std::string dataLen;
+    std::string dataValue;
+    is >> dataLen >> dataValue;
+    int dataRealLen = std::stoi(dataLen.substr(1));
+    if (dataRealLen == -1) {
+        return "(nil)";
+    }
+    else {
+        return dataValue;
+    }
+}
+
+std::string deserilizeHgetData(char responseData[]) {
     std::string str(responseData);
     std::istringstream is(str);
     std::string dataLen;
