@@ -13,4 +13,6 @@ bool isHostPort(const std::string port);
 
 bool checkCommandLineInputs(const int argc, char *argv[]);
 
+bool checkRedisCommand(std::string command);
+
 #endif //TEST_UTIL_H
