@@ -1,1 +1,1 @@
-/Users/zheming/ClionProjects/Test/build/CMakeFiles/myRedis-cli.dir
+/Users/zheming/ClionProjects/Test/build/CMakeFiles/redis-cli.dir

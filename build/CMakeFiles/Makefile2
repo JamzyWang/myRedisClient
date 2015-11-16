@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /Users/zheming/ClionProjects/Test
 CMAKE_BINARY_DIR = /Users/zheming/ClionProjects/Test/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/myRedis-cli.dir
+# Target rules for target CMakeFiles/redis-cli.dir
 
 # All Build rule for target.
-CMakeFiles/myRedis-cli.dir/all:
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/depend
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=1,2,3,4 "Built target myRedis-cli"
-.PHONY : CMakeFiles/myRedis-cli.dir/all
+CMakeFiles/redis-cli.dir/all:
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/depend
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zheming/ClionProjects/Test/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target redis-cli"
+.PHONY : CMakeFiles/redis-cli.dir/all
 
 # Include target in all.
-all: CMakeFiles/myRedis-cli.dir/all
+all: CMakeFiles/redis-cli.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/myRedis-cli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zheming/ClionProjects/Test/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/myRedis-cli.dir/all
+CMakeFiles/redis-cli.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zheming/ClionProjects/Test/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/redis-cli.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zheming/ClionProjects/Test/build/CMakeFiles 0
-.PHONY : CMakeFiles/myRedis-cli.dir/rule
+.PHONY : CMakeFiles/redis-cli.dir/rule
 
 # Convenience name for target.
-myRedis-cli: CMakeFiles/myRedis-cli.dir/rule
+redis-cli: CMakeFiles/redis-cli.dir/rule
 
-.PHONY : myRedis-cli
-
-# clean rule for target.
-CMakeFiles/myRedis-cli.dir/clean:
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/clean
-.PHONY : CMakeFiles/myRedis-cli.dir/clean
+.PHONY : redis-cli
 
 # clean rule for target.
-clean: CMakeFiles/myRedis-cli.dir/clean
+CMakeFiles/redis-cli.dir/clean:
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/clean
+.PHONY : CMakeFiles/redis-cli.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/redis-cli.dir/clean
 
 .PHONY : clean
 

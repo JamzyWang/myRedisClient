@@ -113,5 +113,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/myRedis-cli.dir/DependInfo.cmake"
+  "CMakeFiles/redis-cli.dir/DependInfo.cmake"
   )

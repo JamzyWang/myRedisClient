@@ -18,4 +18,4 @@ file(GLOB SOURCE_FILES "src/*.cpp")
 
 #add_executable(myexec src/module1/module1.cpp src/module2/module2.cpp src/main.cpp)
 #add_executable(mytest test1.cpp)
-add_executable(myRedis-cli ${SOURCE_FILES})
+add_executable(redis-cli ${SOURCE_FILES})

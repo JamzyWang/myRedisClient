@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named myRedis-cli
+# Target rules for targets named redis-cli
 
 # Build rule for target.
-myRedis-cli: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 myRedis-cli
-.PHONY : myRedis-cli
+redis-cli: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 redis-cli
+.PHONY : redis-cli
 
 # fast build rule for target.
-myRedis-cli/fast:
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/build
-.PHONY : myRedis-cli/fast
+redis-cli/fast:
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/build
+.PHONY : redis-cli/fast
 
 src/dataSerialization.o: src/dataSerialization.cpp.o
 
@@ -129,7 +129,7 @@ src/dataSerialization.o: src/dataSerialization.cpp.o
 
 # target to build an object file
 src/dataSerialization.cpp.o:
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/src/dataSerialization.cpp.o
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/dataSerialization.cpp.o
 .PHONY : src/dataSerialization.cpp.o
 
 src/dataSerialization.i: src/dataSerialization.cpp.i
@@ -138,7 +138,7 @@ src/dataSerialization.i: src/dataSerialization.cpp.i
 
 # target to preprocess a source file
 src/dataSerialization.cpp.i:
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/src/dataSerialization.cpp.i
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/dataSerialization.cpp.i
 .PHONY : src/dataSerialization.cpp.i
 
 src/dataSerialization.s: src/dataSerialization.cpp.s
@@ -147,7 +147,7 @@ src/dataSerialization.s: src/dataSerialization.cpp.s
 
 # target to generate assembly for a file
 src/dataSerialization.cpp.s:
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/src/dataSerialization.cpp.s
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/dataSerialization.cpp.s
 .PHONY : src/dataSerialization.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -156,7 +156,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -165,7 +165,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -174,8 +174,62 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/redisCommandRouter.o: src/redisCommandRouter.cpp.o
+
+.PHONY : src/redisCommandRouter.o
+
+# target to build an object file
+src/redisCommandRouter.cpp.o:
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.o
+.PHONY : src/redisCommandRouter.cpp.o
+
+src/redisCommandRouter.i: src/redisCommandRouter.cpp.i
+
+.PHONY : src/redisCommandRouter.i
+
+# target to preprocess a source file
+src/redisCommandRouter.cpp.i:
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.i
+.PHONY : src/redisCommandRouter.cpp.i
+
+src/redisCommandRouter.s: src/redisCommandRouter.cpp.s
+
+.PHONY : src/redisCommandRouter.s
+
+# target to generate assembly for a file
+src/redisCommandRouter.cpp.s:
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/redisCommandRouter.cpp.s
+.PHONY : src/redisCommandRouter.cpp.s
+
+src/redisString.o: src/redisString.cpp.o
+
+.PHONY : src/redisString.o
+
+# target to build an object file
+src/redisString.cpp.o:
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/redisString.cpp.o
+.PHONY : src/redisString.cpp.o
+
+src/redisString.i: src/redisString.cpp.i
+
+.PHONY : src/redisString.i
+
+# target to preprocess a source file
+src/redisString.cpp.i:
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/redisString.cpp.i
+.PHONY : src/redisString.cpp.i
+
+src/redisString.s: src/redisString.cpp.s
+
+.PHONY : src/redisString.s
+
+# target to generate assembly for a file
+src/redisString.cpp.s:
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/redisString.cpp.s
+.PHONY : src/redisString.cpp.s
 
 src/util.o: src/util.cpp.o
 
@@ -183,7 +237,7 @@ src/util.o: src/util.cpp.o
 
 # target to build an object file
 src/util.cpp.o:
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/src/util.cpp.o
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/util.cpp.o
 .PHONY : src/util.cpp.o
 
 src/util.i: src/util.cpp.i
@@ -192,7 +246,7 @@ src/util.i: src/util.cpp.i
 
 # target to preprocess a source file
 src/util.cpp.i:
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/src/util.cpp.i
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/util.cpp.i
 .PHONY : src/util.cpp.i
 
 src/util.s: src/util.cpp.s
@@ -201,7 +255,7 @@ src/util.s: src/util.cpp.s
 
 # target to generate assembly for a file
 src/util.cpp.s:
-	$(MAKE) -f CMakeFiles/myRedis-cli.dir/build.make CMakeFiles/myRedis-cli.dir/src/util.cpp.s
+	$(MAKE) -f CMakeFiles/redis-cli.dir/build.make CMakeFiles/redis-cli.dir/src/util.cpp.s
 .PHONY : src/util.cpp.s
 
 # Help Target
@@ -212,13 +266,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... myRedis-cli"
+	@echo "... redis-cli"
 	@echo "... src/dataSerialization.o"
 	@echo "... src/dataSerialization.i"
 	@echo "... src/dataSerialization.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/redisCommandRouter.o"
+	@echo "... src/redisCommandRouter.i"
+	@echo "... src/redisCommandRouter.s"
+	@echo "... src/redisString.o"
+	@echo "... src/redisString.i"
+	@echo "... src/redisString.s"
 	@echo "... src/util.o"
 	@echo "... src/util.i"
 	@echo "... src/util.s"
